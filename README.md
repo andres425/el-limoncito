@@ -26,7 +26,7 @@ Cada tarde, El Limoncito recibe clientes que dejan su ropa para recoger el mismo
 
 1.no se aceptan cantidades <= a 0.
 
-2.no se permiten totales negativos.
+2.cuando el cliente ingrese valores menores de 5 se be tomar el precio normal
 
 3.no se puede editar una orden una vez confirmada.
 
@@ -61,11 +61,12 @@ esta clase va a tener todas las caracterisiticas de la orden
 
 ----PRUEBAS----
 
-1.se provara ingrsando una cantidad <= a 0 
+1.dado que el programa no acepta cantidades menores o iguales a 0
+![image](./assets/Captura%20de%20pantalla%202025-11-13%20194633.png)
 
-2.se provara con totales negativos 
+2.dado que el cliente ingreso cantidades menores que 5 el programa toma el valor normal
 
-3.se provara que cuando el cliente de la opcion exprés se le agregue un recargo del 10%
+3.dado que el cliente 
 
 4.se provara ingresando cantidades >= 5 para comprovar que se haga el descuento
 
