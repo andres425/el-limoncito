@@ -24,11 +24,35 @@ Cada tarde, El Limoncito recibe clientes que dejan su ropa para recoger el mismo
 
 ----CRITERIOS DE ACEPTACION----
 
-1.no se aceptan cantidades <= a 0.
+**CA1 – Cantidades inválidas**
 
-2.cuando el cliente ingrese valores menores de 5 se be tomar el precio normal
+* **Dado** que el sistema solicita una cantidad para un producto
+* **Cuando** el usuario ingresa un valor menor o igual que cero
+* **Entonces** el sistema debe rechazar la entrada y solicitar nuevamente una cantidad válida.
 
-3.no se puede editar una orden una vez confirmada.
+CA2 – Cálculo de precio normal (<5 unidades)
+
+Dado que un cliente encarga 3 camisas
+
+Cuando se calculan los subtotales
+
+Entonces se debe usar precio normal ($4.000) y el subtotal debe ser $12.000.
+
+**CA3 – Orden no editable después de confirmada**
+
+* **Dado** que una orden ya fue confirmada
+* **Cuando** el usuario intenta cambiar cantidades, datos del cliente o cualquier valor de la orden
+* **Entonces** el sistema debe rechazar la modificación e indicar que la orden confirmada no puede editarse.
+
+
+CA4 – Cálculo de precio por volumen (≥5 unidades)
+
+Dado que un cliente encarga 5 pantalones
+
+Cuando se realiza el cálculo
+
+Entonces el precio aplicado debe ser $5.000 y el subtotal debe ser $25.000.
+
 
 
 ----REGLAS DE NEGOCIO----
@@ -65,11 +89,13 @@ esta clase va a tener todas las caracterisiticas de la orden
 ![image](./assets/Captura%20de%20pantalla%202025-11-13%20194633.png)
 
 2.dado que el cliente ingreso cantidades menores que 5 el programa toma el valor normal
+![image](./assets/Captura%20de%20pantalla%202025-11-13%20200203.png)
 
-3.dado que el cliente 
+3.dado que la orden una vez confirmada no se puede editar
+![image](./assets/image.png)
 
-4.se provara ingresando cantidades >= 5 para comprovar que se haga el descuento
-
+4.dado que el cliente ingreso cantidades mayores o iguales a 5 el valor se tomo diferente
+![image](./assets/ordenmayora5.png)
 ----DISEÑO----
 
 
