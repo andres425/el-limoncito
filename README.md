@@ -96,6 +96,8 @@ esta clase va a tener todas las caracterisiticas de la orden
 
 4.dado que el cliente ingreso cantidades mayores o iguales a 5 el valor se tomo diferente
 ![image](./assets/ordenmayora5.png)
+
+
 ----DISEÑO----
 
 
